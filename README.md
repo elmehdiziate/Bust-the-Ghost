@@ -20,7 +20,8 @@ Unity is a powerful and famous game development engine that enables developers t
 
 Probabilistic inference is an important topic in AI, more specifically in our project at hand. It refers to the process of using mathematics and probability theory to make predictions, draw new conclusions, or update beliefs based on available evidence/information. In our context as well, probabilistic inferencing helps in handling uncertainty and making decisions in situations where the outcome is not completely deterministic. Bayesian inference is one way to approach probabilistic reasoning by updating beliefs or probabilities based on new evidence found. It relies on Bayes' theorem that mathematically relates the likelihood of an event to the prior probability of the event and the probability of the evidence. 
 
-![Untitled](Project%20#3%20Bust%20the%20Ghost%204a562401f75f48f5857ad4fb3e446d01/Untitled.png)
+![image](https://github.com/elmehdiziate/Bust-the-Ghost/assets/109172506/7bf27ae3-3004-4ccb-a060-99d3aa1a78ce)
+
 
 - *P*(*A\B*) represents the probability of event A occurring given that event B has occurred. This is called the posterior probability.
 - *P*(*B\A*) represents the probability of event B occurring given that event A has occurred. This is called the likelihood.
@@ -29,21 +30,24 @@ Probabilistic inference is an important topic in AI, more specifically in our pr
 
 Knowing that P(A|B) is given by the following conditional probability formula:
 
-![Untitled](Project%20#3%20Bust%20the%20Ghost%204a562401f75f48f5857ad4fb3e446d01/Untitled%201.png)
+![image](https://github.com/elmehdiziate/Bust-the-Ghost/assets/109172506/b39d8b32-1f87-4a70-bf5e-3cc87c887639)
+
 
 ## Game Description
 
 “Bust the Ghost” game is a 7x13 grid where a ghost is randomly placed at some tile. The player can click on “Play” to start the game. 
 
-![Untitled](Project%20#3%20Bust%20the%20Ghost%204a562401f75f48f5857ad4fb3e446d01/Untitled%202.png)
+![image](https://github.com/elmehdiziate/Bust-the-Ghost/assets/109172506/10b41e9f-a1c3-4909-a1bd-38a7b8ec6aef)
+
 
 The player is taken to a screen where the grid is displayed for the user to start playing. We have added a random red tile to add noise to the game and mislead the player thinking that the ghost might be around that red tile, this way they can lose one point form their initial credit. 
 
-![Untitled](Project%20#3%20Bust%20the%20Ghost%204a562401f75f48f5857ad4fb3e446d01/Untitled%203.png)
+![image](https://github.com/elmehdiziate/Bust-the-Ghost/assets/109172506/714d3b68-dd42-403c-ac43-84369d5c2152)
+
 
 The game allows the user to take a look at the possible probabilities P(Ghost|Color) in each cell by clicking the **peep** button. The game uses a uniform distribution of probabilities at first as shown bellow. 
 
-![Untitled](Project%20#3%20Bust%20the%20Ghost%204a562401f75f48f5857ad4fb3e446d01/Untitled%204.png)
+![image](https://github.com/elmehdiziate/Bust-the-Ghost/assets/109172506/67753dc2-3d8b-45f5-b35b-12b97a1fa854)
 
 The player clicks on the tiles and a color pops up to give a hint about how close the user is to the ghost, simultaneously, after each click the probability is updated based on how far the ghost is from that cell. The colors displayed as sensors are: 
 
@@ -54,11 +58,13 @@ The player clicks on the tiles and a color pops up to give a hint about how clos
 
 Each click costs the player one point from their initial credit and the player can keep playing as long as the credit does not run out or they have not busted the ghost yet. When the user locates the cell where the ghost is placed, they can click on **Bust the Ghost** button. The player then either wins if they guess the location of the ghost correctly there:
 
-![Untitled](Project%20#3%20Bust%20the%20Ghost%204a562401f75f48f5857ad4fb3e446d01/Untitled%205.png)
+![image](https://github.com/elmehdiziate/Bust-the-Ghost/assets/109172506/837367c1-14e3-48c5-ab2a-dfc1f2ded0df)
+
 
 Or loses if they miss where the ghost is actually placed:
 
-![Untitled](Project%20#3%20Bust%20the%20Ghost%204a562401f75f48f5857ad4fb3e446d01/Untitled%206.png)
+![image](https://github.com/elmehdiziate/Bust-the-Ghost/assets/109172506/35ee0f6c-2bee-47e5-9d5d-0dcf4b0e2624)
+
 
 ## Bayesian Inference in Bust the Ghost
 
